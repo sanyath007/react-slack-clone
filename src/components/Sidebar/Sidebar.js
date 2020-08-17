@@ -38,7 +38,8 @@ function Sidebar() {
           </h3>
         </div>
         <CreateIcon />
-      </div>
+      </div>{/* sidebar header */}
+      
       <SidebarOption Icon={InsertCommentIcon} title={'Threads'} />
       <SidebarOption Icon={InboxIcon} title={'Mentions & reactions'} />
       <SidebarOption Icon={DraftsIcon} title={'Saved items'} />
@@ -53,7 +54,7 @@ function Sidebar() {
         <SidebarOption key={ch.id} title={ch.name} />
       ))}
       <hr />
-      <SidebarOption Icon={AddIcon} title={'Add Channel'} />
+      <SidebarOption Icon={AddIcon} addChannelOption title={'Add Channel'} />
     </div>
   )
 }
